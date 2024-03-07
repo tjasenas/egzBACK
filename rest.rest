@@ -1,0 +1,104 @@
+// Login
+POST http://localhost:3000/api/login
+content-type: application/json
+
+{
+    "email": "jonaitssi@gmail.com",
+    "password": "123456"
+}
+
+###
+
+//Register
+POST http://localhost:3000/api/register
+content-type: application/json
+
+{
+    "name": "jonaitis",
+    "email": "jonaitssi@gmail.com",
+    "password": "123456"
+}
+
+###
+
+//add
+POST http://localhost:3000/api/addAd
+content-type: application/json
+
+{
+    "title": "First posts",
+    "description": "Very important programing language.",
+    "price": 25,
+    "category": 1,
+    "image": "https://picsum.photos/id/2/800/600"
+}
+
+###
+
+// UPDATE
+PUT http://localhost:3000/api/updateAd
+content-type: application/json
+
+{
+    "title": "First posts1",
+    "description": "Very important programing language.",
+    "price": 25,
+    "category": 1,
+    "image": "https://picsum.photos/id/2/800/600",
+    "id": "1"
+}
+
+###
+
+// paslėpti skelbima
+PUT http://localhost:3000/api/visability
+content-type: application/json
+
+{
+    "visability": 1,
+    "id": 1
+}
+
+###
+
+// istrinti skelbima
+DELETE http://localhost:3000/api/removeAd
+content-type: application/json
+
+{
+    "id": 1
+}
+
+###
+
+// gauti kategorijas
+GET http://localhost:3000/api/categories
+
+###
+
+// gauti kategorijas
+POST http://localhost:3000/api/addCategory
+content-type: application/json
+
+{
+    "name": "Automobiliai"
+}
+
+###
+
+// gauti kategorijas
+GET http://localhost:3000/api/allUsers
+
+
+###
+
+// blokuoti vartotoja
+
+PUT http://localhost:3000/api/blockUser
+content-type: application/json
+
+{
+    "activation": 1,
+    "id": 1
+}
+
